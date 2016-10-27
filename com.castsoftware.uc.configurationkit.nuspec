@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>com.castsoftware.uc.configurationkit</id>
+    <version>0.1.1</version>
+    <title>Configuration Kit</title>
+    <authors>CAST SMEs Group</authors>
+    <owners>CAST SMEs Group</owners>
+    <projectUrl>https://github.com/PhilippeGuerin/CASTConfigurationKit/wiki</projectUrl>
+	 <iconUrl>https://calliopeconsultinggroup.files.wordpress.com/2016/10/configurationkit.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Provide default set of configuration focus on missing links</description>
+    <releaseNotes>Cobol Advanced JCL</releaseNotes>
+    <tags>AFP CAIP8.2Beta CAIP8.1 CSS </tags>
+    <dependencies>
+      <dependency id="CAIP" version="8.1" />
+    </dependencies>
+	<licenseUrl>https://help.castsoftware.com/hc/en-us/articles/212612648-Application-Intelligence-Platform-Extension-License</licenseUrl>
+  </metadata>
+</package>

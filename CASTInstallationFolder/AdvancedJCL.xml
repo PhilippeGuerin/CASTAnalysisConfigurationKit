@@ -1,0 +1,817 @@
+<CALL_LIST>
+
+	<!-- Generic DD card -->
+	<DDCARD>
+		<NAME>SYSIN</NAME>
+		<KeyWord>DELETE</KeyWord>
+		<Link>WRITE</Link>
+	</DDCARD>
+	
+	<DDCARD>
+		<NAME>SYSIN</NAME>
+		<KeyWord>COPY</KeyWord>
+		<Link>READ</Link>
+	</DDCARD>
+
+	<!-- ICE utilities -->
+	<PROGRAM>
+		<NAME>ICEGENER</NAME>
+		<COMMENT>Utility</COMMENT>
+		<DDCARD>
+			<NAME>SYSUT1</NAME>
+			<Link>READ</Link>
+		</DDCARD>
+		<DDCARD>
+			<NAME>SYSUT2</NAME>
+			<Link>WRITE</Link>
+		</DDCARD>
+	</PROGRAM>
+
+	<PROGRAM>
+		<NAME>IEHMOVE</NAME>
+		<COMMENT>Moves or copies sequential datasets.</COMMENT>
+	</PROGRAM>
+		<PROGRAM>
+		<NAME>IEHPROGM</NAME>
+		<COMMENT>Deleting and renaming datasets; catalog or uncatalog datasets other than VSAM</COMMENT>
+	</PROGRAM>
+		<PROGRAM>
+		<NAME>IEHCOMPR</NAME>
+		<COMMENT>Compares data in sequential datasets.</COMMENT>
+	</PROGRAM>
+
+	<PROGRAM>
+		<NAME>IERRCO00</NAME>
+		<COMMENT>This is a powerful IBM utility used to copy, sort or merge datasets. </COMMENT>
+		<DDCARD>
+			<NAME>SYSIN</NAME>
+			<Link>ACCESS</Link>
+		</DDCARD>
+	</PROGRAM>
+	<PROGRAM>
+		<NAME>DFSORT</NAME>
+		<COMMENT>This is a powerful IBM utility used to copy, sort or merge datasets. </COMMENT>
+		<DDCARD>
+			<NAME>SYSIN</NAME>
+			<Link>ACCESS</Link>
+		</DDCARD>
+	</PROGRAM>
+		<PROGRAM>
+		<NAME>SYNCSORT</NAME>
+		<COMMENT>Used to copy, merge or sort datasets with a high performance</COMMENT>
+		<DDCARD>
+			<NAME>SYSIN</NAME>
+			<Link>ACCESS</Link>
+		</DDCARD>
+	</PROGRAM>
+	<PROGRAM>
+		<NAME>EQQEVPGM</NAME>
+		<COMMENT>Issue the TSO commands for Tivoli Workload Scheduler for z/OS in batch</COMMENT>
+		<DDCARD>
+			<NAME>SYSIN</NAME>
+			<Link>ACCESS</Link>
+		</DDCARD>
+	</PROGRAM>
+	 
+	<!-- IEB utilities -->
+	<PROGRAM>
+		<NAME>IEBGENER</NAME>
+		<COMMENT>Utility</COMMENT>
+		<DDCARD>
+			<NAME>SYSUT1</NAME>
+			<Link>READ</Link>
+		</DDCARD>
+		<DDCARD>
+			<NAME>SYSUT2</NAME>
+			<Link>WRITE</Link>
+		</DDCARD>
+	</PROGRAM>
+	<PROCEDURE>
+		<NAME>IEBGENER</NAME>
+		<COMMENT>Utility</COMMENT>
+		<DDCARD>
+			<NAME>SYSUT1</NAME>
+			<Link>READ</Link>
+		</DDCARD>
+		<DDCARD>
+			<NAME>SYSUT2</NAME>
+			<Link>WRITE</Link>
+		</DDCARD>
+	</PROCEDURE>
+	<PROGRAM>
+		<NAME>IEBCOPY</NAME>
+		<COMMENT>Copy, Merge, compress, back-up or restore PDS.</COMMENT>
+		<DDCARD>
+			<NAME>DD01</NAME>
+			<Link>READ</Link>
+		</DDCARD>
+		<DDCARD>
+			<NAME>DD02</NAME>
+			<Link>WRITE</Link>
+		</DDCARD>
+	</PROGRAM>
+
+	<PROGRAM>
+		<NAME>IEBDG</NAME>
+		<COMMENT>Utility Data Generator</COMMENT>
+	</PROGRAM>
+	
+	<PROGRAM>
+		<NAME>IEBPTPCH</NAME>
+		<COMMENT>Prints or punches records from a sequential or partitioned dataset.</COMMENT>
+	</PROGRAM>	
+	<PROGRAM>
+		<NAME>IEBISAM</NAME>
+		<COMMENT>Unloads, loads, copies and prints ISAM datasets.</COMMENT>
+	</PROGRAM>
+	<PROGRAM>
+		<NAME>IEBUPDTE</NAME>
+		<COMMENT>Incorporates changes to sequential or partitioned datasets.</COMMENT>
+	</PROGRAM>
+	<PROGRAM>
+		<NAME>IEBCOMPR</NAME>
+		<COMMENT>Compares records in sequential or partitioned data sets.</COMMENT>
+	</PROGRAM>	
+	<PROGRAM>
+		<NAME>IEBIMAGE</NAME>
+		<COMMENT>Manipulates several types of definitions (AKA images) for the IBM 3800</COMMENT>
+	</PROGRAM>
+	<PROGRAM>
+		<NAME>IEBEDIT</NAME>
+		<COMMENT>Used to copy selected parts of a JCL.</COMMENT>
+	</PROGRAM>
+	
+	<!-- TSM utilities -->
+	<PROGRAM>
+		<NAME>TSMSUMDR</NAME>
+		<COMMENT>TSO / MON Performance Management - CA Product</COMMENT>
+	</PROGRAM>
+	<PROGRAM>
+		<NAME>TSMDRVR</NAME>
+		<COMMENT>TSO / MON Performance Management - CA Product</COMMENT>
+	</PROGRAM>
+		<PROGRAM>
+		<NAME>TSMPRMS</NAME>
+		<COMMENT>TSO / MON Performance Management - CA Product</COMMENT>
+	</PROGRAM>
+		<PROGRAM>
+		<NAME>TSMJCL</NAME>
+		<COMMENT>TSO / MON Performance Management - CA Product</COMMENT>
+	</PROGRAM>
+		<PROGRAM>
+		<NAME>TSMLIB</NAME>
+		<COMMENT>TSO / MON Performance Management - CA Product</COMMENT>
+	</PROGRAM>
+	<PROGRAM>
+		<NAME>CTSDEU</NAME>
+		<COMMENT>Erase Data</COMMENT>
+	</PROGRAM>
+	<PROGRAM>
+		<NAME>CTSMAIL</NAME>
+		<COMMENT>Email or WTO</COMMENT>
+	</PROGRAM>
+	<PROGRAM>
+		<NAME>CTSSYNC</NAME>
+		<COMMENT>Support 3495/3494 Devices</COMMENT>
+	</PROGRAM>
+	<PROGRAM>
+		<NAME>CTSPMTST</NAME>
+		<COMMENT>Validate Pattern Definitions</COMMENT>
+	</PROGRAM>
+	<PROGRAM>
+		<NAME>CTSTAPER</NAME>
+		<COMMENT>Test CA 1 Operating System Intercepts and Functions</COMMENT>
+	</PROGRAM>
+	<PROGRAM>
+		<NAME>CTSVDBU</NAME>
+		<COMMENT>VSAM Database</COMMENT>
+	</PROGRAM>
+	<PROGRAM>
+		<NAME>CTSVDBBK</NAME>
+		<COMMENT>Support the Tape Agent Database</COMMENT>
+	</PROGRAM>
+	<PROGRAM>
+		<NAME>CTSXLIST</NAME>
+		<COMMENT>Export Virtual Volumes onto Physical Volumes</COMMENT>
+	</PROGRAM>
+	<PROGRAM>
+		<NAME>DYNCOMM</NAME>
+		<COMMENT>Support CA Dynam/T Interface Queue Processing</COMMENT>
+	</PROGRAM>
+	<PROGRAM>
+		<NAME>DYNEXTRA</NAME>
+		<COMMENT>Build the Database Extract for DYNSYNC</COMMENT>
+	</PROGRAM>
+	<PROGRAM>
+		<NAME>DYNFORMT</NAME>
+		<COMMENT>Format CA 1 CA Dynam/T Interface Queues</COMMENT>
+	</PROGRAM>
+	<PROGRAM>
+		<NAME>DYNRELSE</NAME>
+		<COMMENT>Release CA Dynam/T Interface Queues</COMMENT>
+	</PROGRAM>
+	<PROGRAM>
+		<NAME>DYNSYNC</NAME>
+		<COMMENT>Synchronize the CA Dynam/T Databases</COMMENT>
+	</PROGRAM>
+	<PROGRAM>
+		<NAME>DYNUPDTE</NAME>
+		<COMMENT>Update the CA Dynam/T Databases</COMMENT>
+	</PROGRAM>
+	<PROGRAM>
+		<NAME>L0E0INIT</NAME>
+		<COMMENT>Initialize and Reinitialize CA 1</COMMENT>
+	</PROGRAM>
+	<PROGRAM>
+		<NAME>TMSAGGR</NAME>
+		<COMMENT>Maintain Data Set Name Blocks</COMMENT>
+	</PROGRAM>
+	<PROGRAM>
+		<NAME>TMSAUDEX</NAME>
+		<COMMENT>Extract TMC Audit Data</COMMENT>
+	</PROGRAM>
+	<PROGRAM>
+		<NAME>TMSAUDIT</NAME>
+		<COMMENT>Analyze TMC Activity</COMMENT>
+	</PROGRAM>
+	<PROGRAM>
+		<NAME>TMSBINQ</NAME>
+		<COMMENT>Print Volume, DSNB and CA 1 Control Records</COMMENT>
+	</PROGRAM>
+	<PROGRAM>
+		<NAME>TMSBLDVR</NAME>
+		<COMMENT>Build TMC Volume Ranges Table</COMMENT>
+	</PROGRAM>
+	<PROGRAM>
+		<NAME>TMSCKDTM</NAME>
+		<COMMENT>Verify Packed Fields in the TMC</COMMENT>
+	</PROGRAM>
+	<PROGRAM>
+		<NAME>TMSCKLVL</NAME>
+		<COMMENT>Print and Verify Maintenance Levels of Resident Tape Processing Modules</COMMENT>
+	</PROGRAM>
+	<PROGRAM>
+		<NAME>TMSCLEAN</NAME>
+		<COMMENT>List Scratch, Clean and Scratch Inventory Volumes</COMMENT>
+	</PROGRAM>
+	<PROGRAM>
+		<NAME>TMSCLNOA</NAME>
+		<COMMENT>Clean and Mark Out-of-Area</COMMENT>
+	</PROGRAM>
+	<PROGRAM>
+		<NAME>TMSCONVR</NAME>
+		<COMMENT>Convert Sequential Data Sets</COMMENT>
+	</PROGRAM>
+	<PROGRAM>
+		<NAME>TMSCOPY</NAME>
+		<COMMENT>Back Up/Restore the TMC and Audit Data Set</COMMENT>
+	</PROGRAM>
+	<PROGRAM>
+		<NAME>TMSCTLG</NAME>
+		<COMMENT>Remove Tapes from Catalog Control</COMMENT>
+	</PROGRAM>
+	<PROGRAM>
+		<NAME>TMSCYCLE</NAME>
+		<COMMENT>Remove Tapes from Cycle Control</COMMENT>
+	</PROGRAM>
+	<PROGRAM>
+		<NAME>TMSDATA</NAME>
+		<COMMENT>Produce TMS Sequential Data Sets</COMMENT>
+	</PROGRAM>
+	<PROGRAM>
+		<NAME>TMSDELET</NAME>
+		<COMMENT>Activate, Deactivate TMC Volume Records</COMMENT>
+	</PROGRAM>
+	<PROGRAM>
+		<NAME>TMSDISP</NAME>
+		<COMMENT>Perform Batch Auxiliary Disposition Processing</COMMENT>
+	</PROGRAM>
+	<PROGRAM>
+		<NAME>TMSEXPDT</NAME>
+		<COMMENT>Reset Expiration Dates in the TMC</COMMENT>
+	</PROGRAM>
+	<PROGRAM>
+		<NAME>TMSFORMT</NAME>
+		<COMMENT>Format, Extend the TMC and Audit Data Set</COMMENT>
+	</PROGRAM>
+	<PROGRAM>
+		<NAME>TMSFVSN</NAME>
+		<COMMENT>Initialize DSNBs with Beginning Volume for Data Set</COMMENT>
+	</PROGRAM>
+	<PROGRAM>
+		<NAME>TMSGRW</NAME>
+		<COMMENT>Produce Customized Reports on TMC and Audit Records</COMMENT>
+	</PROGRAM>
+	<PROGRAM>
+		<NAME>TMSIDATA</NAME>
+		<COMMENT>Build a TMC from VSAM or Operating System Catalog Listing (EXTENTS)</COMMENT>
+	</PROGRAM>
+	<PROGRAM>
+		<NAME>TMSINIT</NAME>
+		<COMMENT>Activate, Deactivate CA 1</COMMENT>
+	</PROGRAM>
+	<PROGRAM>
+		<NAME>TMSINITD</NAME>
+		<COMMENT>Analyze hlq.CTAPOPTN Scratch Pool Management Members</COMMENT>
+	</PROGRAM>
+	<PROGRAM>
+		<NAME>TMSLBLPR</NAME>
+		<COMMENT>Process External Tape Labels</COMMENT>
+	</PROGRAM>
+	<PROGRAM>
+		<NAME>TMSMERGE</NAME>
+		<COMMENT>Merge TMC Data</COMMENT>
+	</PROGRAM>
+	<PROGRAM>
+		<NAME>TMSMULV</NAME>
+		<COMMENT>Construct Multivolume Pointers for TMC Volume Records</COMMENT>
+	</PROGRAM>
+	<PROGRAM>
+		<NAME>TMSOSCAT</NAME>
+		<COMMENT>Report on TMC/Operating System Catalog Discrepancies</COMMENT>
+	</PROGRAM>
+	<PROGRAM>
+		<NAME>TMSPTRS</NAME>
+		<COMMENT>Maintain Multivolume, Multi-Data Set Chains</COMMENT>
+	</PROGRAM>
+	<PROGRAM>
+		<NAME>TMSPULL</NAME>
+		<COMMENT>Produce Library Pull and Setup Lists</COMMENT>
+	</PROGRAM>
+	<PROGRAM>
+		<NAME>TMSREMOV</NAME>
+		<COMMENT>Remove TMC Volume Records</COMMENT>
+	</PROGRAM>
+	<PROGRAM>
+		<NAME>TMSRINIT</NAME>
+		<COMMENT>TMC EXTEND MONITOR</COMMENT>
+	</PROGRAM>
+	<PROGRAM>
+		<NAME>TMSSMF</NAME>
+		<COMMENT>Recover Tape Activity from SMF Data</COMMENT>
+	</PROGRAM>
+	<PROGRAM>
+		<NAME>TMSSMSUP</NAME>
+		<COMMENT>Update TMC With SMS Management Classes</COMMENT>
+	</PROGRAM>
+	<PROGRAM>
+		<NAME>TMSSPLIT</NAME>
+		<COMMENT>Select Data from the TMC for Use by TMSMERGE</COMMENT>
+	</PROGRAM>
+	<PROGRAM>
+		<NAME>TMSSTATS</NAME>
+		<COMMENT>Report Active System Options</COMMENT>
+	</PROGRAM>
+	<PROGRAM>
+		<NAME>TMSTPNIT</NAME>
+		<COMMENT>Initialize Tape Volumes</COMMENT>
+	</PROGRAM>
+	<PROGRAM>
+		<NAME>TMSTPPRO</NAME>
+		<COMMENT>Process Tape Volume Header Label Information</COMMENT>
+	</PROGRAM>
+	<PROGRAM>
+		<NAME>TMSUDSNB</NAME>
+		<COMMENT>Apply Batch Updates to DSNB/Control Records</COMMENT>
+	</PROGRAM>
+	<PROGRAM>
+		<NAME>TMSUNCAT</NAME>
+		<COMMENT>Uncatalog Tape Data Sets</COMMENT>
+	</PROGRAM>
+	<PROGRAM>
+		<NAME>TMSUPDTE</NAME>
+		<COMMENT>Apply Batch Updates to TMC Volume Records</COMMENT>
+	</PROGRAM>
+	<PROGRAM>
+		<NAME>TMSVMEDT</NAME>
+		<COMMENT>Validate the Vault Pattern Description Data Set</COMMENT>
+	</PROGRAM>
+	<PROGRAM>
+		<NAME>TMSVMUPD</NAME>
+		<COMMENT>Update the TMC for Vault Management</COMMENT>
+	</PROGRAM>
+	<PROGRAM>
+		<NAME>TMSVMVLT</NAME>
+		<COMMENT>Process the Vault Pattern Description Data Set and TMC Records</COMMENT>
+	</PROGRAM>
+	<PROGRAM>
+		<NAME>TMSXTEND</NAME>
+		<COMMENT>Dynamic TMC Extend Process Control Program</COMMENT>
+	</PROGRAM>
+	<PROGRAM>
+		<NAME>TMSPNIT</NAME>
+		<COMMENT>?</COMMENT>
+	</PROGRAM>
+	<PROGRAM>
+		<NAME>TMSPRTRS</NAME>
+		<COMMENT>?</COMMENT>
+	</PROGRAM>
+	<PROGRAM>
+		<NAME>TMSLSEQ1</NAME>
+		<COMMENT>?</COMMENT>
+	</PROGRAM>
+	<PROGRAM>
+		<NAME>TMSFUTR</NAME>
+		<COMMENT>?</COMMENT>
+	</PROGRAM>
+	<PROGRAM>
+		<NAME>TMSDELTA</NAME>
+		<COMMENT></COMMENT>
+	</PROGRAM>
+	<PROGRAM>
+		<NAME>TMSCSEQ1</NAME>
+		<COMMENT>?</COMMENT>
+	</PROGRAM>
+	<PROGRAM>
+		<NAME>TMSBSEQ1</NAME>
+		<COMMENT>?</COMMENT>
+	</PROGRAM>
+		
+		
+		
+	<PROGRAM>
+		<NAME>GIMSMP</NAME>
+		<COMMENT>SMP/E cataloged procedure</COMMENT>
+	</PROGRAM>
+	<PROGRAM>
+		<NAME>FDRREORG</NAME>
+		<COMMENT>Utility</COMMENT>
+	</PROGRAM>
+	<PROGRAM>
+		<NAME>FDRDSF</NAME>
+		<COMMENT>Utility</COMMENT>
+	</PROGRAM>	
+	<PROGRAM>
+		<NAME>FDRCPK</NAME>
+		<COMMENT>Utility</COMMENT>
+	</PROGRAM>	
+	<PROGRAM>
+		<NAME>ERBRMFPP</NAME>
+		<COMMENT>Utility</COMMENT>
+	</PROGRAM>	
+	<PROGRAM>
+		<NAME>EQQYCAIN</NAME>
+		<COMMENT>Utility</COMMENT>
+	</PROGRAM>	
+	<PROGRAM>
+		<NAME>EQQYLTOP</NAME>
+		<COMMENT>Utility</COMMENT>
+	</PROGRAM>
+	<PROGRAM>
+		<NAME>EQQBATCH</NAME>
+		<COMMENT>Utility</COMMENT>
+	</PROGRAM>	
+	<PROGRAM>
+		<NAME>DFHSTUP</NAME>
+		<COMMENT>Statistics utility program</COMMENT>
+	</PROGRAM>	
+	<PROGRAM>
+		<NAME>DFHJUP</NAME>
+		<COMMENT>Processes CICS journal data in MVS system logger log streams</COMMENT>
+	</PROGRAM>	
+	<!-- Utilities -->
+	<PROGRAM>
+		<NAME>IDCAMS</NAME>
+		<COMMENT>Management of VSAM Files</COMMENT>
+		<DDCARD>
+			<NAME>SYSIN</NAME>
+			<Link>ACCESS</Link>
+		</DDCARD>
+	</PROGRAM>
+
+	<PROGRAM>
+		<NAME>FASTVSAM</NAME>
+		<COMMENT>Manage VSAM files with FASTVSAM by SEA. FASTVSAM transparently replaces IDCAMS REPRO, EXPORT and IMPORT commands</COMMENT>
+		<DDCARD>
+			<NAME>SYSIN</NAME>
+			<Link>ACCESS</Link>
+		</DDCARD>
+	</PROGRAM>
+	
+	<PROGRAM>
+		<NAME>FILEAID</NAME>
+		<COMMENT>Utility</COMMENT>
+	</PROGRAM>
+
+	<PROGRAM>
+		<NAME>ADRDSSU</NAME>
+		<COMMENT>Utility</COMMENT>
+		<DDCARD>
+			<NAME>SYSIN</NAME>
+			<KeyWord>INCLUDE\(</KeyWord>
+			<Link>READ</Link>
+		</DDCARD>
+		<DDCARD>
+			<NAME>SYSIN</NAME>
+			<KeyWord>OUTDD\(</KeyWord>
+			<Link>WRITE</Link>
+		</DDCARD>
+	</PROGRAM>
+
+	<PROGRAM>
+		<NAME>SORT</NAME>
+		<COMMENT>Sorting Utility for VSAM Files</COMMENT>
+		<DDCARD>
+			<NAME>SORTIN</NAME>
+			<Link>READ</Link>
+		</DDCARD>
+		<DDCARD>
+			<NAME>SORTOUT</NAME>
+			<Link>WRITE</Link>
+		</DDCARD>
+	</PROGRAM>
+
+	
+		<PROGRAM>
+		<NAME>MQARCLOG</NAME>
+		<COMMENT>MQ Utility</COMMENT>
+	</PROGRAM>
+	
+		<PROGRAM>
+		<NAME>MQCLRDEL</NAME>
+		<COMMENT>MQ Utility</COMMENT>
+	</PROGRAM>
+	
+		<PROGRAM>
+		<NAME>MQDLQMON</NAME>
+		<COMMENT>MQ Utility</COMMENT>
+	</PROGRAM>
+	
+		<PROGRAM>
+		<NAME>MQMLOAD</NAME>
+		<COMMENT>MQ Utility</COMMENT>
+	</PROGRAM>
+	
+		<PROGRAM>
+		<NAME>MQMUNLD</NAME>
+		<COMMENT>MQ Utility</COMMENT>
+	</PROGRAM>
+		
+		<PROGRAM>		
+		<NAME>PKUNZIP</NAME>
+		<COMMENT>Compress Utility</COMMENT>
+	</PROGRAM>	
+		<PROGRAM>		
+		<NAME>PKZIP</NAME>
+		<COMMENT>Compress Utility</COMMENT>
+	</PROGRAM>	
+		<PROGRAM>		
+		<NAME>SAS</NAME>
+		<COMMENT>SAS Utility</COMMENT>
+	</PROGRAM>
+	<PROGRAM>		
+		<NAME>SASHOST</NAME>
+		<COMMENT>SAS Utility</COMMENT>
+	</PROGRAM>	
+	<PROGRAM>		
+		<NAME>SASSBCLP</NAME>
+		<COMMENT>SAS Utility</COMMENT>
+	</PROGRAM>	
+	<PROGRAM>		
+		<NAME>SASSBEND</NAME>
+		<COMMENT>SAS Utility</COMMENT>
+	</PROGRAM>	
+	<PROGRAM>		
+		<NAME>SASSBSTR</NAME>
+		<COMMENT>SAS Utility</COMMENT>
+	</PROGRAM>	
+	<PROGRAM>		
+		<NAME>SASSDSCI</NAME>
+		<COMMENT>SAS Utility</COMMENT>
+	</PROGRAM>	
+	<PROGRAM>		
+		<NAME>SASSJJCL</NAME>
+		<COMMENT>SAS Utility</COMMENT>
+	</PROGRAM>	
+	<PROGRAM>		
+		<NAME>SASSTRLR</NAME>
+		<COMMENT>SAS Utility</COMMENT>
+	</PROGRAM>	
+	<PROGRAM>		
+		<NAME>SASXA1</NAME>
+		<COMMENT>SAS Utility</COMMENT>
+	</PROGRAM>			
+	<PROGRAM>
+		<NAME>IEFBR%</NAME>
+		<COMMENT>Internal Utility</COMMENT>
+	</PROGRAM>
+
+	<PROGRAM>
+		<NAME>CTLBLKC</NAME>
+		<COMMENT>Internal Utility</COMMENT>
+	</PROGRAM>
+
+	<!-- Transfer utilities -->
+	<PROGRAM>
+		<NAME>PELICA2</NAME>
+		<COMMENT>Transfer Utility</COMMENT>
+		<DDCARD>
+			<NAME>SYSIN</NAME>
+			<KeyWord>DSNORIG=</KeyWord>
+			<Link>READ</Link>
+		</DDCARD>
+	</PROGRAM>
+	<PROCEDURE> 
+		<NAME>ICI86P1</NAME>
+		<COMMENT>BR Launcher Utility</COMMENT> 
+		<PARAMETER> 
+			<NAME>PGM1</NAME> 
+			<POSITION>1</POSITION>
+			<LINK>CALL</LINK> 
+			</PARAMETER><PARAMETER> <NAME>PGM2</NAME> 
+			<POSITION>1</POSITION>
+			<LINK>CALL</LINK> 
+			</PARAMETER><PARAMETER> <NAME>PGM3</NAME> 
+			<POSITION>1</POSITION>
+			<LINK>CALL</LINK> 
+			</PARAMETER><PARAMETER> <NAME>PGM4</NAME> 
+			<POSITION>1</POSITION>
+			<LINK>CALL</LINK> 
+			</PARAMETER><PARAMETER> <NAME>PGM5</NAME> 
+			<POSITION>1</POSITION>
+			<LINK>CALL</LINK> 
+			</PARAMETER><PARAMETER> <NAME>PGM6</NAME> 
+			<POSITION>1</POSITION>
+			<LINK>CALL</LINK> 
+		</PARAMETER> <PARAMETER> <NAME>PGM7</NAME> 
+			<POSITION>1</POSITION>
+			<LINK>CALL</LINK> 
+		</PARAMETER> <PARAMETER> <NAME>PGM8</NAME> 
+			<POSITION>1</POSITION>
+			<LINK>CALL</LINK> 
+		</PARAMETER> <PARAMETER> <NAME>PGM9</NAME> 
+			<POSITION>1</POSITION>
+			<LINK>CALL</LINK> 
+		</PARAMETER> 
+	</PROCEDURE>
+	<PROGRAM>
+		<NAME>FTP</NAME>
+		<COMMENT>Transfer Utility</COMMENT>
+	</PROGRAM>
+	
+	<PROGRAM>
+		<NAME>FTPJSF</NAME>
+		<COMMENT>Transfer Utility</COMMENT>
+	</PROGRAM>
+
+	<PROGRAM>
+		<NAME>VFMUTIL</NAME>
+		<COMMENT>Internal Utility</COMMENT>
+	</PROGRAM>
+
+
+	<!-- VSAM Backup/Restore utilities -->
+	<PROGRAM>
+		<NAME>GVRESTOR</NAME>
+		<COMMENT>Internal Utility</COMMENT>
+	</PROGRAM>
+
+	<PROGRAM>
+		<NAME>GVEXPORT</NAME>
+		<COMMENT>Internal Utility</COMMENT>
+	</PROGRAM>
+
+	<!-- DB2 utilities -->
+	<PROGRAM>
+		<NAME>IKJEFT%</NAME>
+		<COMMENT>Utility for executing DB2 Programs with SQL Requests</COMMENT>
+		<DDCARD>
+			<NAME>SYSTSIN</NAME>
+			<Link>CALL</Link>
+		</DDCARD>
+	</PROGRAM>
+
+	<PROCEDURE>
+		<NAME>DSNUPROC</NAME>
+		<COMMENT>DB2 Procedure</COMMENT>
+		<DDCARD>
+			<NAME>SYSREC</NAME>
+			<Link>READ</Link>
+		</DDCARD>
+	</PROCEDURE>
+
+	<PROGRAM>
+		<NAME>DSNUTILB</NAME>
+		<COMMENT>DB2 Utility</COMMENT>
+	</PROGRAM>
+
+	<!-- IMS utilities -->
+	<!-- Deprecated -->
+	<PROGRAM>
+		<NAME>DFSRRC%</NAME>
+		<COMMENT>IMS Utility</COMMENT>
+		<PARAMETER>
+			<NAME>DLI</NAME>
+			<Link>CALL</Link>
+		</PARAMETER>
+		<PARAMETER>
+			<NAME>DL1</NAME>
+			<Link>CALL</Link>
+		</PARAMETER>
+		<PARAMETER>
+			<NAME>PSB</NAME>
+			<Link>PSB</Link>
+		</PARAMETER>
+		<PARAMETER>
+			<NAME>BMP</NAME>
+			<Link>CALL</Link>
+		</PARAMETER>
+	</PROGRAM>
+
+	<PROGRAM> 
+		<NAME>DFSRRC%</NAME>
+		<COMMENT>IMS Utility</COMMENT> 
+		<PARAMETER> 
+			<NAME>PARM</NAME> 
+			<POSITION>2</POSITION>
+			<LINK>CALL</LINK> 
+		</PARAMETER> 
+		<PARAMETER> 
+			<NAME>PARM</NAME> 
+			<POSITION>3</POSITION>
+			<LINK>PSB</LINK> 
+		</PARAMETER> 
+	</PROGRAM>
+
+	<!-- Deprecated -->
+	<PROGRAM>
+		<NAME>DFSRC%</NAME>
+		<COMMENT>IMS Utility</COMMENT>
+		<PARAMETER>
+			<NAME>PSB</NAME>
+			<Link>PSB</Link>
+		</PARAMETER>
+		<PARAMETER>
+			<NAME>DLI</NAME>
+			<Link>CALL</Link>
+		</PARAMETER>
+		<PARAMETER>
+			<NAME>DL1</NAME>
+			<Link>CALL</Link>
+		</PARAMETER>
+	</PROGRAM>
+
+	<PROGRAM> 
+		<NAME>DFSRC%</NAME>
+		<COMMENT>IMS Utility</COMMENT> 
+		<PARAMETER> 
+			<NAME>PARM</NAME> 
+			<POSITION>2</POSITION>
+			<LINK>CALL</LINK> 
+		</PARAMETER> 
+		<PARAMETER> 
+			<NAME>PARM</NAME> 
+			<POSITION>3</POSITION>
+			<LINK>PSB</LINK> 
+		</PARAMETER> 
+	</PROGRAM>
+
+	<PROCEDURE>
+		<NAME>DLIPROD</NAME>
+		<COMMENT>IMS Procedure</COMMENT>
+		<PARAMETER>
+			<NAME>PSB</NAME>
+			<Link>PSB</Link>
+		</PARAMETER>
+		<PARAMETER>
+			<NAME>MBR</NAME>
+			<Link>CALL</Link>
+		</PARAMETER>
+	</PROCEDURE>
+
+	<PROCEDURE>
+		<NAME>PDLIBDB%</NAME>
+		<COMMENT>IMS Procedure</COMMENT>
+		<PARAMETER>
+			<NAME>PSB</NAME>
+			<Link>PSB</Link>
+		</PARAMETER>
+		<PARAMETER>
+			<NAME>PROG</NAME>
+			<Link>CALL</Link>
+		</PARAMETER>
+	</PROCEDURE>
+
+	<PROCEDURE>
+		<NAME>DB2BATCH</NAME>
+		<COMMENT>DB2 Procedure</COMMENT>
+		<PARAMETER>
+			<NAME>PROG</NAME>
+			<Link>CALL</Link>
+		</PARAMETER>
+	</PROCEDURE>
+
+ 	<PROCEDURE>
+		<NAME>SORT</NAME>
+		<COMMENT>Sorting Utility (PROC) for VSAM Files</COMMENT>
+		<DDCARD>
+			<NAME>SORTIN</NAME>
+			<Link>READ</Link>
+		</DDCARD>
+		<DDCARD>
+			<NAME>SORTOUT</NAME>
+			<Link>WRITE</Link>
+		</DDCARD>
+	</PROCEDURE>
+
+</CALL_LIST>
