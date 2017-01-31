@@ -29,7 +29,7 @@
 
 	<PROGRAM>
 		<NAME>ICETOOL</NAME>
-		<COMMENT>Utility</COMMENT>
+		<COMMENT>ICETOOL is a multipurpose DFSORT utility that uses the capabilities of DFSORT to perform multiple operations on one or more data sets in a single step.</COMMENT>
 	</PROGRAM>
 	
 	<PROGRAM>

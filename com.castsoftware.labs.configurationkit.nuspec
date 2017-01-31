@@ -1,10 +1,10 @@
 <?xml version="1.0"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
-    <id>com.castsoftware.uc.configurationkit</id>
+    <id>com.castsoftware.labs.configurationkit</id>
     <version>0.1.1</version>
     <title>Configuration Kit</title>
-    <authors>CAST SMEs Group</authors>
+    <authors>CAST Labs</authors>
     <owners>CAST SMEs Group</owners>
     <projectUrl>https://github.com/PhilippeGuerin/CASTConfigurationKit/wiki</projectUrl>
 	 <iconUrl>https://calliopeconsultinggroup.files.wordpress.com/2016/10/configurationkit.png</iconUrl>
