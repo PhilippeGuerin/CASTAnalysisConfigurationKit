@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>com.castsoftware.labs.analysisconfigurationkit</id>
+    <version>1.1.2</version>
+    <title>Analysis Configuration Kit</title>
+    <authors>CAST Labs</authors>
+    <owners>CAST</owners>
+    <projectUrl>https://github.com/PhilippeGuerin/CASTAnalysisConfigurationKit/wiki</projectUrl>
+	 <iconUrl>https://raw.githubusercontent.com/PhilippeGuerin/CASTAnalysisConfigurationKit/master/AnalysisConfigurationKit.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Provide default set of configuration focus on missing links</description>
+    <releaseNotes>New API configured in Environment profile to reduce false links in DLM (A for annotation and P for Parametrization):
+	* Analysis Configuration Kit - Bean Validation API (18A)
+	* Analysis Configuration Kit - EasyMock (3A)
+	* Analysis Configuration Kit - JAX-WS (5A)
+	* Analysis Configuration Kit - JAXB (29A)
+	* Analysis Configuration Kit - jBehave (3A)
+	* Analysis Configuration Kit - JSE org.w3c.dom (9P)
+	* Analysis Configuration Kit - JUnit annotations to ignore (12A)
+	* Analysis Configuration Kit - Logger Apache commons logging (12P)
+	* Analysis Configuration Kit - Logger ATG (20P)
+	* Analysis Configuration Kit - Logger Avalon Escalibur (79P)
+	* Analysis Configuration Kit - Logger Camel (16P)
+	* Analysis Configuration Kit - Logger Eclipse (15P)
+	* Analysis Configuration Kit - Logger java.util.logging (19P)
+	* Analysis Configuration Kit - Logger JBOSS (40 P)
+	* Analysis Configuration Kit - Logger JBOSS Seam 2.2.2 (12 P)
+	* Analysis Configuration Kit - Logger jnlp (4 P)
+	* Analysis Configuration Kit - Logger Krysalis (10 P)
+	* Analysis Configuration Kit - Logger Log4j 2 (52P - 4A)
+	* Analysis Configuration Kit - Logger Monolog (8 P)
+	* Analysis Configuration Kit - Logger SLF4J (38 P)
+	* Analysis Configuration Kit - Logger Plexus (15 P)
+	* Analysis Configuration Kit - Logger Mortbay (5 P)
+	* Analysis Configuration Kit - Logger Weblogic (40 P)
+	* Analysis Configuration Kit - Logger xwork2 (12 P)
+	* Analysis Configuration Kit - Lombok (14A)
+	* Analysis Configuration Kit - MeltingPot (11A)
+	* Analysis Configuration Kit - Mokito (4A)
+	* Analysis Configuration Kit - PowerMock (9A)
+	* Analysis Configuration Kit - Spring Framework 3.x add-on (35P - 11A)
+	* Analysis Configuration Kit - TestNG (6A)
+	* Analysis Configuration Kit - Logger ATG (20 P)
+	* Analysis Configuration Kit - Logger Spring (10 P)
+	* Analysis Configuration Kit - Logger Owasp (12 P)
+	* Analysis Configuration Kit - Unit Test Unitils (7A)
+	* Analysis Configuration Kit - XStream (6A)
+	</releaseNotes>
+    <tags>CASTLabs LongTerm CAIP8.2.x CAIP8.1.x CAIP8.0.x CSS FPQuality FPConfiguration Configuration</tags>
+    <dependencies>
+      <dependency id="CAIP" version="8.1" />
+    </dependencies>
+	<licenseUrl>https://help.castsoftware.com/hc/en-us/articles/212612648-Application-Intelligence-Platform-Extension-License</licenseUrl>
+  </metadata>
+</package>
