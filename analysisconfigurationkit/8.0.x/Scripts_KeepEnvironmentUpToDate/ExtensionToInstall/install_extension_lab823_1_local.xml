@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<CAST-AutomaticInstall>
+<ServerInstall ProfileSystem="localhost"  ServerType="CASTSQL" Trusted="N" ConnectionString="LIBPQ:localhost:2280,postgres" UserSystem="operator" SystemPassword="CastAIP">
+        <InstallDatabase DbName="lab823_1_local">
+			<InstallDependencies strategy="TakeLatest"/>
+			<Plugin id="com.castsoftware.internal.platform"/>
+			<Plugin id="com.castsoftware.html5"/>
+			<Plugin id="com.castsoftware.sqlanalyzer"/>
+			<Plugin id="com.castsoftware.wpf"/>
+			<Plugin id="com.castsoftware.wcf"/>
+			<Plugin id="com.castsoftware.wbslinker"/>
+			<Plugin id="com.castsoftware.jquery"/>
+			<Plugin id="com.castsoftware.nodejs"/>
+			<Plugin id="com.castsoftware.silverlight"/>
+			<Plugin id="com.castsoftware.entity"/>
+			<Plugin id="com.castsoftware.angularjs"/>
+			<Plugin id="com.castsoftware.jaxrs"/>
+			<Plugin id="com.castsoftware.springmvc"/>
+			<Plugin id="com.castsoftware.ios"/>
+			<Plugin id="com.castsoftware.php"/>
+			<Plugin id="com.castsoftware.siebel"/>
+			<Plugin id="com.castsoftware.cfamily"/>
+			<Plugin id="com.castsoftware.egl"/>
+			<Plugin id="com.castsoftware.pl1"/>
+			<Plugin id="com.castsoftware.sapui5"/>
+			<Plugin id="com.castsoftware.shell"/>
+			<Plugin id="com.castsoftware.dmtcfilediscoverer"/>
+			<Plugin id="com.castsoftware.JEE-MavenHttp"/>
+			<Plugin id="com.castsoftware.tibco"/>
+			<Plugin id="com.castsoftware.python"/>
+			<Plugin id="com.castsoftware.dmtcvsextractor"/>
+			<Plugin id="com.castsoftware.rpg"/>
+			<Plugin id="com.castsoftware.dmtgitextractor"/>
+			<Plugin id="com.castsoftware.dmtxcodediscoverer"/>
+			<Plugin id="com.castsoftware.dmtjeemanifestdiscoverer"/>
+			<Plugin id="com.castsoftware.dmtjeefilediscoverer"/>
+			<Plugin id="com.castsoftware.peoplesoft"/>
+			<Plugin id="com.castsoftware.fortran"/>
+			<Plugin id="com.castsoftware.flex"/>
+			<Plugin id="com.castsoftware.labs.analysisconfigurationkit"/>
+			<Plugin id="com.castsoftware.labs.transactionconfigurationkit"/>
+			<Plugin id="com.castsoftware.labs.jee.missingtable"/>
+			<Plugin id="com.castsoftware.labs.transactioncompletenesskit"/>
+			<Plugin id="com.castsoftware.uc.ibatis"/>
+			<Plugin id="com.castsoftware.uc.transactioncalibrationkit"/>
+			<Plugin id="com.castsoftware.uc.checkanalysiscompleteness"/>
+        </InstallDatabase>
+    </ServerInstall>
+</CAST-AutomaticInstall>
