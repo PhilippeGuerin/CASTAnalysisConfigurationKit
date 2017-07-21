@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
 <Package	PackName = "TCK_AnalysisConfigLOCAL"
 			Type = "INTERNAL"
- 			Version ="1.1.1"
+ 			Version ="1.1.4"
 			SupportedServer = "ALL"
 			Display="TCK"
-			Description="Analysis Configuration kit"
+			Description="LAB: Analysis Configuration kit"
       DatabaseKind="KB_LOCAL" >
 	<Include>
 		<PackName>DSSAPP_LOCAL</PackName>
